@@ -6,5 +6,8 @@ export const getAxiosWithConfig = (): AxiosInstance => {
     return axios.create({
         baseURL: baseUrl,
         timeout: 30000,
+        headers: {
+            'Content-Type': 'application/json'
+        },
     });
 };

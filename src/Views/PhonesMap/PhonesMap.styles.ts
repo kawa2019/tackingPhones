@@ -1,10 +1,12 @@
-import {Box, styled} from "@mui/material";
+import { Box, styled } from '@mui/material';
 
 export const LeafletContainer = styled(Box)(() => ({
-    width: '100%',
+  width: '100%',
 
-    '.leaflet-container': {
-        height: 500,
-        width: 500
-    }
+  '.leaflet-container': {
+    height: '500px',
+    width: '500px',
+    overflow: 'hidden',
+    margin: '0 auto',
+  },
 }));
