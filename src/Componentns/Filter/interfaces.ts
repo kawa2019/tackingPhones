@@ -1,6 +1,6 @@
 export interface FilterForm {
-  fasterThan: number | '';
-  slowerThan: number | '';
+  fasterThan: string | number;
+  slowerThan: string | number;
   sim: string;
   status: string;
   heartbeat: string;

@@ -35,7 +35,8 @@ const Filter: FC = () => {
 
   useEffect(() => {
     if (trackedPhonesCache) {
-      const filteredPhones = getFilteredPhones(getValues, trackedPhonesCache.data);
+      const values = getValues();
+      const filteredPhones = getFilteredPhones(values, trackedPhonesCache.data);
 
       dispatch({
         type: FilterTypes.SET_FILTERED_PHONES,

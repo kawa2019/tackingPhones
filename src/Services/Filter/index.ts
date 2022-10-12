@@ -1,10 +1,9 @@
-import { UseFormGetValues } from 'react-hook-form';
 import { FilterForm } from '../../Componentns/Filter/interfaces';
 import { PhoneApi } from '../Api/interfaces';
 
-export const getFilteredPhones = (getValues: UseFormGetValues<FilterForm>, data: PhoneApi[]) => {
+export const getFilteredPhones = (values: FilterForm, data: PhoneApi[]) => {
   let filteredPhones = [...data];
-  const { fasterThan, slowerThan, sim, status, heartbeat, imei } = getValues();
+  const { fasterThan, slowerThan, sim, status, heartbeat, imei } = values;
   if (fasterThan) {
     filteredPhones = filteredPhones.filter(phone => +phone.last_speed > +fasterThan);
   }
