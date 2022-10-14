@@ -1,4 +1,4 @@
-# Trackin phones app
+# Tracking phones app
 
 App serve to track phones on the map.
 
