@@ -1,6 +1,6 @@
 # Tracking phones app
 
-App serve to track phones on the map.
+The application is used to track phones on the map.
 
 # Getting Started with Create React App
 
