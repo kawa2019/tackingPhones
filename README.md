@@ -1,3 +1,7 @@
+# Trackin phones app
+
+App serve to track phones on the map.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
